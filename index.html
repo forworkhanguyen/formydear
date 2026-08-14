@@ -1,0 +1,2294 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<title>Dear yêu dấu của em ♡</title>
+
+<link
+  rel="preconnect"
+  href="https://fonts.googleapis.com"
+>
+
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet"
+>
+
+
+<style>
+
+/* =========================================================
+   BASIC
+========================================================= */
+
+:root{
+
+  --cream:#f5f0e8;
+  --paper:#fffdf9;
+  --beige:#d8c8b4;
+  --brown:#806e5b;
+  --brown-light:#b29a83;
+  --black:#171614;
+  --line:#17161420;
+
+  --shadow:
+    0 25px 65px rgba(54,43,31,.13);
+
+}
+
+
+*{
+  box-sizing:border-box;
+}
+
+
+html{
+  scroll-behavior:smooth;
+}
+
+
+body{
+
+  margin:0;
+
+  background:var(--cream);
+
+  color:var(--black);
+
+  font-family:
+    "Lexend",
+    sans-serif;
+
+}
+
+
+/* subtle paper texture */
+
+body::before{
+
+  content:"";
+
+  position:fixed;
+
+  inset:0;
+
+  pointer-events:none;
+
+  z-index:100;
+
+  opacity:.025;
+
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 3px,
+      rgba(0,0,0,.12) 4px
+    );
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+nav{
+
+  position:fixed;
+
+  z-index:50;
+
+  top:16px;
+
+  left:50%;
+
+  transform:translateX(-50%);
+
+  width:
+    min(
+      930px,
+      calc(100% - 24px)
+    );
+
+  padding:
+    9px
+    10px
+    9px
+    18px;
+
+  border:
+    1px solid var(--line);
+
+  border-radius:99px;
+
+  background:
+    rgba(255,253,249,.85);
+
+  backdrop-filter:blur(16px);
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+}
+
+
+nav .brand{
+
+  font-size:12px;
+
+  letter-spacing:.12em;
+
+  text-transform:uppercase;
+
+}
+
+
+nav .links{
+
+  display:flex;
+
+  gap:5px;
+
+}
+
+
+nav a{
+
+  text-decoration:none;
+
+  color:var(--black);
+
+  font-size:11px;
+
+  padding:8px 12px;
+
+  border-radius:99px;
+
+  transition:.25s ease;
+
+}
+
+
+nav a:hover{
+
+  background:var(--black);
+
+  color:white;
+
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.container{
+
+  width:
+    min(
+      1060px,
+      calc(100% - 36px)
+    );
+
+  margin:auto;
+
+}
+
+
+section{
+
+  padding:110px 0;
+
+}
+
+
+.eyebrow{
+
+  font-size:11px;
+
+  text-transform:uppercase;
+
+  letter-spacing:.22em;
+
+  color:var(--brown);
+
+  margin-bottom:18px;
+
+}
+
+
+h2{
+
+  font-size:
+    clamp(
+      38px,
+      6vw,
+      72px
+    );
+
+  line-height:1;
+
+  letter-spacing:-.06em;
+
+  margin:
+    0
+    0
+    45px;
+
+  font-weight:500;
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+  min-height:100vh;
+
+  display:grid;
+
+  place-items:center;
+
+  padding:
+    130px
+    0
+    80px;
+
+}
+
+
+.hero-inner{
+
+  width:
+    min(
+      1050px,
+      100%
+    );
+
+  position:relative;
+
+}
+
+
+.hero h1{
+
+  font-size:
+    clamp(
+      55px,
+      9vw,
+      125px
+    );
+
+  line-height:1.02;
+
+  letter-spacing:-.07em;
+
+  margin:0;
+
+  font-weight:600;
+
+}
+
+
+.hero h1 span{
+
+  display:block;
+
+}
+
+
+.hero h1 .light{
+
+  font-weight:300;
+
+}
+
+
+.hero-copy{
+
+  width:
+    min(
+      560px,
+      100%
+    );
+
+  margin-top:35px;
+
+  font-size:15px;
+
+  line-height:1.8;
+
+  color:#5e554d;
+
+}
+
+
+.hero-copy strong{
+
+  color:var(--black);
+
+}
+
+
+.hero-actions{
+
+  display:flex;
+
+  gap:10px;
+
+  margin-top:28px;
+
+  flex-wrap:wrap;
+
+}
+
+
+.btn{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-decoration:none;
+
+  color:var(--black);
+
+  border:
+    1px solid var(--line);
+
+  padding:
+    12px 18px;
+
+  border-radius:99px;
+
+  font-size:12px;
+
+  background:var(--paper);
+
+  cursor:pointer;
+
+  font-family:inherit;
+
+}
+
+
+.btn.dark{
+
+  background:var(--black);
+
+  color:white;
+
+}
+
+
+
+.birthday-title span{
+  display:block;
+  margin-bottom:18px;
+}
+.birthday-title span:last-child{
+  margin-bottom:0;
+}
+
+/* =========================================================
+   HERO PHOTO AREA
+========================================================= */
+
+.stage{
+
+  height:570px;
+
+  position:relative;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:9px;
+
+  padding-top:50px;
+
+}
+
+
+.spider{
+
+  position:absolute;
+
+  width:205px;
+
+  left:-35px;
+
+  top:-25px;
+
+  z-index:6;
+
+  filter:
+    drop-shadow(
+      0 15px 15px rgba(0,0,0,.13)
+    );
+
+}
+
+
+.coffee{
+
+  position:absolute;
+
+  z-index:8;
+
+  left:17%;
+
+  top:2%;
+
+  font-size:55px;
+
+  transform:rotate(-10deg);
+
+}
+
+
+.bear{
+
+  position:absolute;
+
+  right:1%;
+
+  top:1%;
+
+  width:68px;
+
+  height:68px;
+
+  border:
+    1px solid var(--line);
+
+  border-radius:50%;
+
+  display:grid;
+
+  place-items:center;
+
+  background:
+    rgba(255,253,249,.86);
+
+  font-size:27px;
+
+  z-index:8;
+
+  transform:rotate(9deg);
+
+}
+
+
+/*
+  3 ảnh bằng kích thước.
+  object-fit:contain để không crop mặt.
+*/
+
+.photo{
+
+  position:relative;
+
+  width:31%;
+
+  max-width:165px;
+
+  height:305px;
+
+  object-fit:contain;
+
+  object-position:center;
+
+  background:white;
+
+  border:9px solid white;
+
+  box-shadow:var(--shadow);
+
+  z-index:3;
+
+}
+
+
+.main{
+
+  transform:rotate(-2deg);
+
+}
+
+
+.p2{
+
+  transform:rotate(2deg);
+
+}
+
+
+.p3{
+
+  transform:rotate(-1deg);
+
+}
+
+
+/* =========================================================
+   16 THẺ LẬT
+========================================================= */
+
+#love{
+
+  background:var(--paper);
+
+}
+
+
+.flip-memes{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(
+      4,
+      1fr
+    );
+
+  gap:15px;
+
+}
+
+
+.flip-card{
+
+  height:260px;
+
+  perspective:1200px;
+
+  cursor:pointer;
+
+}
+
+
+.flip-inner{
+
+  width:100%;
+
+  height:100%;
+
+  position:relative;
+
+  transform-style:preserve-3d;
+
+  transition:
+    transform
+    .72s
+    cubic-bezier(
+      .2,
+      .75,
+      .2,
+      1
+    );
+
+}
+
+
+.flip-card.flipped
+.flip-inner{
+
+  transform:
+    rotateY(180deg);
+
+}
+
+
+.face{
+
+  position:absolute;
+
+  inset:0;
+
+  backface-visibility:hidden;
+
+  -webkit-backface-visibility:hidden;
+
+  border:
+    1px solid var(--line);
+
+  border-radius:17px;
+
+  overflow:hidden;
+
+  box-shadow:
+    0
+    15px
+    38px
+    rgba(52,42,31,.05);
+
+}
+
+
+/* FRONT */
+
+.front{
+
+  background:var(--paper);
+
+}
+
+
+.front img{
+
+  display:block;
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+}
+
+
+/* BACK */
+
+.back{
+
+  transform:
+    rotateY(180deg);
+
+  background:var(--black);
+
+  color:white;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  padding:30px;
+
+}
+
+
+.back p{
+
+  margin:0;
+
+  text-align:center;
+
+  font-size:16px;
+
+  line-height:1.55;
+
+  font-weight:500;
+
+}
+
+
+/* =========================================================
+   8 LỜI CHÚC
+========================================================= */
+
+#wish{
+
+  background:var(--cream);
+
+}
+
+
+.wish-list{
+
+  border-top:
+    1px solid var(--line);
+
+}
+
+
+.wish-item{
+
+  display:grid;
+
+  grid-template-columns:
+    70px
+    1fr;
+
+  gap:20px;
+
+  align-items:center;
+
+  padding:25px 0;
+
+  border-bottom:
+    1px solid var(--line);
+
+  transition:
+    padding
+    .25s
+    ease;
+
+}
+
+
+.wish-item:hover{
+
+  padding-left:12px;
+
+}
+
+
+.wish-item span{
+
+  font-size:11px;
+
+  letter-spacing:.12em;
+
+  color:var(--brown);
+
+}
+
+
+.wish-item p{
+
+  margin:0;
+
+  font-size:16px;
+
+  line-height:1.6;
+
+}
+
+
+/* =========================================================
+   FINAL MESSAGE
+========================================================= */
+
+.final{
+
+  background:var(--black);
+
+  color:white;
+
+  min-height:70vh;
+
+  display:flex;
+
+  align-items:center;
+
+}
+
+
+.final .eyebrow{
+
+  color:var(--brown-light);
+
+}
+
+
+.final-message{
+
+  width:
+    min(
+      720px,
+      100%
+    );
+
+  margin-top:30px;
+
+}
+
+
+.final-message
+.main-text{
+
+  font-size:
+    clamp(
+      24px,
+      4vw,
+      45px
+    );
+
+  line-height:1.45;
+
+  letter-spacing:-.04em;
+
+  font-weight:300;
+
+  margin:0;
+
+}
+
+
+.love-final{
+
+  display:block;
+
+  margin-top:35px;
+
+  font-size:
+    clamp(
+      30px,
+      5vw,
+      58px
+    );
+
+  line-height:1;
+
+  font-weight:600;
+
+  letter-spacing:-.05em;
+
+}
+
+
+/* WHITE + BROWN HEARTS */
+
+.heart-row{
+
+  display:flex;
+
+  gap:12px;
+
+  align-items:center;
+
+  margin-top:25px;
+
+  font-size:22px;
+
+  line-height:1;
+
+}
+
+
+.heart-row span{
+
+  color:white;
+
+  display:inline-block;
+
+  animation:
+    heartFloat
+    2.5s
+    ease-in-out
+    infinite;
+
+}
+
+
+.heart-row .brown{
+
+  color:#b29a83;
+
+}
+
+
+.heart-row span:nth-child(2){
+
+  animation-delay:.15s;
+
+}
+
+
+.heart-row span:nth-child(3){
+
+  animation-delay:.3s;
+
+}
+
+
+.heart-row span:nth-child(4){
+
+  animation-delay:.45s;
+
+}
+
+
+.heart-row span:nth-child(5){
+
+  animation-delay:.6s;
+
+}
+
+
+.heart-row span:nth-child(6){
+
+  animation-delay:.75s;
+
+}
+
+
+.heart-row span:nth-child(7){
+
+  animation-delay:.9s;
+
+}
+
+
+.heart-row span:nth-child(8){
+
+  animation-delay:1.05s;
+
+}
+
+
+.heart-row span:nth-child(9){
+
+  animation-delay:1.2s;
+
+}
+
+
+@keyframes heartFloat{
+
+  0%,100%{
+
+    transform:
+      translateY(0);
+
+  }
+
+  50%{
+
+    transform:
+      translateY(-5px);
+
+  }
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+  background:var(--black);
+
+  color:#aaa;
+
+  text-align:center;
+
+  padding:
+    25px
+    20px
+    35px;
+
+  font-size:10px;
+
+  letter-spacing:.14em;
+
+  text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:850px){
+
+  .flip-memes{
+
+    grid-template-columns:
+      repeat(
+        2,
+        1fr
+      );
+
+    gap:10px;
+
+  }
+
+}
+
+
+@media(max-width:560px){
+
+  .container{
+
+    width:
+      min(
+        100% - 24px,
+        1060px
+      );
+
+  }
+
+
+  nav .links a:nth-child(2){
+
+    display:none;
+
+  }
+
+
+  .stage{
+
+    height:430px;
+
+  }
+
+
+  .photo{
+
+    height:225px;
+
+    border-width:7px;
+
+  }
+
+
+  .spider{
+
+    width:145px;
+
+    left:-20px;
+
+  }
+
+
+  .coffee{
+
+    font-size:40px;
+
+  }
+
+
+  .bear{
+
+    width:55px;
+
+    height:55px;
+
+    font-size:22px;
+
+  }
+
+
+  .flip-memes{
+
+    grid-template-columns:
+      repeat(
+        2,
+        1fr
+      );
+
+    gap:9px;
+
+  }
+
+
+  .flip-card{
+
+    height:225px;
+
+  }
+
+
+  .back{
+
+    padding:20px;
+
+  }
+
+
+  .back p{
+
+    font-size:13px;
+
+  }
+
+
+  .wish-item{
+
+    grid-template-columns:
+      45px
+      1fr;
+
+    gap:12px;
+
+  }
+
+
+  .wish-item p{
+
+    font-size:14px;
+
+  }
+
+
+  .final{
+
+    min-height:65vh;
+
+  }
+
+
+  .final-message
+  .main-text{
+
+    font-size:22px;
+
+  }
+
+
+  .love-final{
+
+    font-size:35px;
+
+  }
+
+
+  .heart-row{
+
+    gap:8px;
+
+    font-size:18px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     NAVIGATION
+======================================================= -->
+
+<nav>
+
+  <div class="brand">
+    Dear yêu dấu của em ♡
+  </div>
+
+  <div class="links">
+
+    <a href="#home">
+      Home
+    </a>
+
+    <a href="#love">
+      16 điều
+    </a>
+
+    <a href="#wish">
+      Lời chúc
+    </a>
+
+  </div>
+
+</nav>
+
+
+
+<!-- =======================================================
+     HOME
+======================================================= -->
+
+<section
+  class="hero"
+  id="home"
+>
+
+  <div class="container hero-inner">
+
+    <div class="eyebrow">
+      16 · 08
+    </div>
+
+
+    <h1 class="birthday-title">
+  <span>Chúc mừng</span>
+  <span class="light">sinh nhật</span>
+  <span>anh Bảo</span>
+</h1>
+
+
+    <div class="hero-copy">
+
+      <strong>
+        Dear yêu dấu của em
+      </strong>
+
+      <br><br>
+
+      1 món quà nhỏ em tự mày mò để dành riêng choa anh đó =))
+
+    </div>
+
+
+    <div class="hero-actions">
+
+      <button
+        class="btn"
+        id="mb"
+        onclick="toggleMusic()"
+      >
+        ▶
+      </button>
+
+    </div>
+
+
+    <!-- 3 ẢNH ANH BẢO -->
+
+    <div class="stage">
+
+
+      <!-- SPIDER MAN -->
+
+      <img
+        class="spider"
+        src="spiderman.png"
+        alt="Spider-Man"
+      >
+
+
+      <!-- AMERICANO -->
+
+      <div class="coffee">
+        ☕
+      </div>
+
+
+      <!-- GẤU -->
+
+      <div class="bear">
+        🐻
+      </div>
+
+
+      <!-- ẢNH 1 -->
+
+      <img
+        class="photo main"
+        src="photo-01.jpg"
+        alt="Anh Bảo"
+      >
+
+
+      <!-- ẢNH 2 -->
+
+      <img
+        class="photo p2"
+        src="photo-02.jpg"
+        alt="Anh Bảo"
+      >
+
+
+      <!-- ẢNH 3 -->
+
+      <img
+        class="photo p3"
+        src="photo-03.jpg"
+        alt="Anh Bảo"
+      >
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     16 ĐIỀU EM YÊU Ở ANH
+======================================================= -->
+
+<section id="love">
+
+  <div class="container">
+
+
+    <div class="eyebrow">
+      01 · 16 điều em yêu ở anh
+    </div>
+
+
+    <h2>
+      16 điều em yêu ở anh
+    </h2>
+
+
+    <div class="flip-memes">
+
+
+      <!-- 01 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-01.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh bản lĩnh
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 02 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-02.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh chu đáo
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 03 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-03.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh thông minh, tài giỏi trong điều mình làm
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 04 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-04.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh nỗ lực hết mình
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 05 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-05.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Mindset cầu tiến
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 06 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-06.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh kiên cường
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 07 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-07.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh lắng nghe em
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 08 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-08.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh dịu dàng với em
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 09 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-09.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh quan tâm em
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 10 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-10.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh lo lắng cho em
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 11 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-11.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh để tâm tới cảm xúc của em
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 12 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-12.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh chủ động với em
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 13 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-13.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh ưu tiên em
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 14 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-14.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh hài hước, hay pha trò với em
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 15 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-15.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh tinh tế, EQ cao
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- 16 -->
+
+      <div
+        class="flip-card"
+        onclick="flipCard(this)"
+      >
+
+        <div class="flip-inner">
+
+          <div class="face front">
+
+            <img
+              src="meme-16.jpg"
+              alt="Meme thỏ hồng"
+            >
+
+          </div>
+
+
+          <div class="face back">
+
+            <p>
+              Anh vô tri nhưng vẫn nghiêm túc, chín chắn
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     8 ĐIỀU CHÚC
+======================================================= -->
+
+<section id="wish">
+
+  <div class="container">
+
+
+    <div class="eyebrow">
+      02 · Những điều em muốn gửi đến anh
+    </div>
+
+
+    <h2>
+      8 điều chúc em gửi đến anh
+    </h2>
+
+
+    <div class="wish-list">
+
+
+      <div class="wish-item">
+
+        <span>
+          01
+        </span>
+
+        <p>
+          Chúc anh luôn giữ sức khoẻ tốt
+        </p>
+
+      </div>
+
+
+      <div class="wish-item">
+
+        <span>
+          02
+        </span>
+
+        <p>
+          Chúc anh thực hiện được mục tiêu của mình
+        </p>
+
+      </div>
+
+
+      <div class="wish-item">
+
+        <span>
+          03
+        </span>
+
+        <p>
+          Chúc anh cười thật nhiều
+        </p>
+
+      </div>
+
+
+      <div class="wish-item">
+
+        <span>
+          04
+        </span>
+
+        <p>
+          Chúc anh luôn giữ được tinh thần tích cực trong mọi hoàn cảnh
+        </p>
+
+      </div>
+
+
+      <div class="wish-item">
+
+        <span>
+          05
+        </span>
+
+        <p>
+          Chúc anh nhận được những thứ tốt đẹp nhất
+        </p>
+
+      </div>
+
+
+      <div class="wish-item">
+
+        <span>
+          06
+        </span>
+
+        <p>
+          Chúc anh luôn an toàn, được ông trời vũ trụ bảo hộ
+        </p>
+
+      </div>
+
+
+      <div class="wish-item">
+
+        <span>
+          07
+        </span>
+
+        <p>
+          Chúc anh vui vẻ, bình yên trong cuộc sống của mình
+        </p>
+
+      </div>
+
+
+      <div class="wish-item">
+
+        <span>
+          08
+        </span>
+
+        <p>
+          Chúc anh luôn kiên cường và bản lĩnh như vậy
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     FINAL
+======================================================= -->
+
+<section class="final">
+
+  <div class="container">
+
+
+    <div class="eyebrow">
+      ONE LAST THING
+    </div>
+
+
+    <div class="final-message">
+
+
+      <p class="main-text">
+
+        Cảm ơn anh nhiều lắm vì đã thương em,
+        cảm ơn anh rất nhiều,
+        em biết ơn anh nhiều lắm.
+
+      </p>
+
+
+      <p class="love-final">
+
+        Yêu anh
+
+      </p>
+
+
+      <!-- TRÁI TIM TRẮNG + NÂU -->
+
+      <div class="heart-row">
+
+        <span>♥</span>
+
+        <span class="brown">♥</span>
+
+        <span>♥</span>
+
+        <span class="brown">♥</span>
+
+        <span>♥</span>
+
+        <span class="brown">♥</span>
+
+        <span>♥</span>
+
+        <span class="brown">♥</span>
+
+        <span>♥</span>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =======================================================
+     FOOTER
+======================================================= -->
+
+<footer>
+
+  16/08/2002. A tiny gift from Hannie
+
+</footer>
+
+
+
+<!-- =======================================================
+     MUSIC
+======================================================= -->
+
+<audio
+  id="bgm"
+  preload="auto"
+  autoplay
+  loop
+  playsinline
+>
+
+  <source
+    src="Risk_It_All.mp3"
+    type="audio/mpeg"
+  >
+
+</audio>
+
+
+
+<!-- =======================================================
+     JAVASCRIPT
+======================================================= -->
+
+<script>
+
+
+/* =========================================================
+   MUSIC
+========================================================= */
+
+const bgm =
+  document.getElementById("bgm");
+
+
+const musicButton =
+  document.getElementById("mb");
+
+
+let playing = false;
+
+
+
+async function startMusic(){
+
+  try{
+
+    await bgm.play();
+
+    playing = true;
+
+    if(musicButton){
+
+      musicButton.textContent =
+        "❚❚";
+
+    }
+
+  }
+
+  catch(error){
+
+    playing = false;
+
+    if(musicButton){
+
+      musicButton.textContent =
+        "▶";
+
+    }
+
+  }
+
+}
+
+
+
+function toggleMusic(){
+
+  if(bgm.paused){
+
+    bgm.play()
+      .then(()=>{
+
+        playing = true;
+
+        if(musicButton){
+
+          musicButton.textContent =
+            "❚❚";
+
+        }
+
+      })
+
+      .catch(()=>{});
+
+  }
+
+  else{
+
+    bgm.pause();
+
+    playing = false;
+
+    if(musicButton){
+
+      musicButton.textContent =
+        "▶";
+
+    }
+
+  }
+
+}
+
+
+
+/*
+  Thử chạy nhạc ngay khi trang load.
+*/
+
+window.addEventListener(
+  "load",
+  ()=>{
+
+    setTimeout(
+      startMusic,
+      250
+    );
+
+  }
+);
+
+
+
+/*
+  Nếu trình duyệt chặn autoplay,
+  lần tương tác đầu tiên của người dùng
+  sẽ bật nhạc.
+*/
+
+[
+  "click",
+  "touchstart",
+  "keydown",
+  "pointerdown"
+
+].forEach(
+
+  eventName=>{
+
+    document.addEventListener(
+
+      eventName,
+
+      ()=>{
+
+        if(bgm.paused){
+
+          startMusic();
+
+        }
+
+      },
+
+      {
+        once:true,
+        passive:true
+      }
+
+    );
+
+  }
+
+);
+
+
+
+/* =========================================================
+   FLIP CARDS
+========================================================= */
+
+function flipCard(card){
+
+  card.classList.toggle(
+    "flipped"
+  );
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
